@@ -1,7 +1,7 @@
 name: Hello Flow
 
 on:
-  workflow_dispatch
+  push
 
 jobs:
   first-job:
@@ -11,7 +11,3 @@ jobs:
         run: echo "Hello World!"
       - name: Diga valeu
         run: echo "Valeu - bye!"
-      - name: Run a multi-line script
-        run: |
-          echo "Add other actions to build,"
-          echo "test, and deploy your project."
